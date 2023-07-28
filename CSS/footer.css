@@ -1,0 +1,85 @@
+footer {
+    background-color: rgba(125, 210, 236, 0.31)
+}
+
+.footer-tab {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vw;
+}
+
+.flex-grow {
+    flex-grow: 2;
+}
+
+.content-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1-item-1 {
+    padding: 10px;
+}
+
+.container-1-item-2 {
+    padding: 10px;
+}
+
+.container-1-item-3 {
+    padding: 10px;
+}
+
+.sdfg {
+    padding: 10px;
+}
+
+.dfgh {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dfgh>img {
+    width: 1vw;
+    margin-right: 1vw;
+    background-color: white;
+}
+
+.ghjk {
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+    color: white;
+}
+
+input {
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+}
+
+textarea {
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: whitesmoke;
+}
+
+#btn {
+    background-color: black;
+    color: white;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Vacation Online</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/CSS/header-css.css">
+    <link rel="stylesheet" href="/CSS/poster.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/deals.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="shortcut icon" href="/images/poster.jpg">
+</head>
+
+<body>
+    <header>
+        <div class="head-tab">
+            <div class="head-item-1 head-padding">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="img">
+                </div>
+            </div>
+            <div class="head-item-2 head-padding">
+
+                <ul class="list-items">
+                    <li class="lists">Flights</li>
+                    <li class="lists">Hotels</li>
+                    <li class="lists">Cars</li>
+                    <li class="lists">Cruises</li>
+                    <li class="lists">Packages</li>
+                    <li class="lists">Destinations</li>
+                    <li class="lists">Activites</li>
+                    <li class="lists">Last Minute</li>
+                </ul>
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="poster-img">
+        <img src="/images/poster.jpg" alt="img" class="poster">
+        <div class="wewewpe">
+            Peace of Mind
+        </div>
+        <div class="wewewpe fontsize">
+            Find your hotel, fast and easy
+        </div>
+        <div class="bookings">
+            <ul class="booking-list wewewpe">
+                <li class="booking-items " id="bif" ondblclick="hide(id)" onmouseover="glow(id)" onmouseout="reverse(id)">Flight</li>
+                <div class="flight-book hide" id="fl">
+                    <div class="input-items">
+                        <div class="item1">Arrival</div>
+                        <div class="item2"><input type="date"></div>
+                    </div>
+                    <div class="input-items">
+                        <div class="item1">Return</div>
+                        <div class="item2"><input type="date"></div>
+                    </div>
+                    <div class="input-items">
+                        <div class="item1">class</div>
+                        <div class="item2">
+                            <select name="class" id="flight-class">
+                                    <option value="select">Select</option>
+                                    <option value="economy">Economy</option>
+                                    <option value="buisness">Buisness</option>
+                                    <option value="first-class">First-class</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="input-items">
+                        <div class="item1">Adults</div>
+                        <div class="item2"><input type="number"></div>
+                    </div>
+                    <div class="input-items">
+                        <div class="item1">Childern</div>
+                        <div class="item2"><input type="number"></div>
+                    </div>
+                </div>
+                <li class="booking-items " id="bih" ondblclick="hide(id)" onmouseover="glow(id)" onmouseout="reverse(id)">Hotels
+                    <div class="hotel-book hide" id="hb">
+                        <div class="input-items">
+                            <div class="item1">Arrival</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Return</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Rooms</div>
+                            <div class="item2">
+                                <input type="number">
+                            </div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Adults</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Childern</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                </li>
+                <li class="booking-items" id="bic" ondblclick="hide(id) " onmouseover="glow(id)" onmouseout="reverse(id)">Cars
+                    <div class="car-book hide" id="cb">
+                        <div class="input-items">
+                            <div class="item1">Arrival</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Return</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">car</div>
+                            <div class="item2">
+                                <select name="car-type" id="car-type">
+                                            <option value="select">Select</option>
+                                            <option value="dezire">Dezire</option>
+                                            <option value="omini">Omini</option>
+                                            <option value="alto">Alto</option>
+                                            <option value="thar">Thar</option>
+                                        </select>
+                            </div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Adults</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Childern</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                </li>
+                <li class="booking-items" id="bicu" ondblclick="hide(id)" onmouseover="glow(id)" onmouseout="reverse(id)">Cruises
+                    <div class="cruises-book hide" id="crb">
+                        <div class="input-items">
+                            <div class="item1">Arrival</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Return</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">cruise</div>
+                            <div class="item2">
+                                <select name="cruise-type" id="cruise-type">
+                                                <option value="select">Select</option>
+                                                <option value="cruise1">Small
+                                                    Cruise Ship</option>
+                                                <option value="cruise2">Ocean
+                                                    Cruise Ship</option>
+                                                <option value="cruise3">Adventure
+                                                    Cruise Ship</option>
+                                                <option value="cruise4">River
+                                                    Cruise Ship</option>
+                                                <option value="cruise5">Mainstream
+                                                    Cruise Ship</option>
+                                                <option value="cruise6">Mega
+                                                    Cruise Ship</option>
+                                            </select>
+                            </div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Adults</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Childern</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                </li>
+                <li class="booking-items" id="bip" ondblclick="hide(id)" onmouseover="glow(id)" onmouseout="reverse(id)">Packages
+                    <div class="package-book hide" id="pb">
+                        <div class="input-items">
+                            <div class="item1">Arrival</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Return</div>
+                            <div class="item2"><input type="date"></div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">cruise</div>
+                            <div class="item2">
+                                <select name="mode" id="mode">
+                                                    <option value="select">Select</option>
+                                                    <option value="road">Road</option>
+                                                    <option value="airplane">Airplane</option>
+                                                    <option value="cruise">Cruise</option>
+                                                    <option value="combo">Combo</option>
+                                                </select>
+                            </div>
+                        </div>
+                        <div class="input-items">
+                            <div class="item1">Person</div>
+                            <div class="item2"><input type="number"></div>
+                        </div>
+                </li>
+            </ul>
+            </div>
+
+            <div class="deals">
+                <div class="top mar" id="specialdeals">
+                    <h2>Special Deals!!!!!!</h2>
+                </div>
+                <div class="bottom mar">
+
+                    <div class="deal" id="d_1" onclick="globalClick()" onmouseenter="globalClick()">
+                        <div class="deal_img">
+
+                            <img src="/images/card_1" alt="" class="deal_">
+                        </div>
+                        <div class="deal_content " id="km">
+
+                            <div class="rtrt ">
+
+                                <div class="tyyt">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal" id="d_2" onclick="globalClick()" onmouseenter="globalClick()">
+
+                        <div class="deal_img">
+
+                            <img src="/images/card_2.jpg" alt="" class="deal_">
+                        </div>
+                        <div class="deal_content" id="jgb">
+                            <div class="rtrt ">
+                                <div class="tyyt">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal" id="d_3" onclick="globalClick()" onmouseenter="globalClick()" data-attr="Egypt">
+                        <div class="deal_img">
+
+                            <img src="/images/card_3.jpg" alt="" class="deal_">
+                        </div>
+                        <div class="deal_content " id="dm">
+
+                            <div class="rtrt ">
+                                <div class="tyyt">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <script src="/JS/poster.js"></script>
+            </div>
+
+            </div>
+
+            <main>
+                <div class="deals_container">
+                    <!-- <img src="/images/travel-map.jpg" alt=""> -->
+                    <div class="deals_banner">
+                        <h2>
+
+                            Deals for you
+                        </h2>
+                    </div>
+                    <div class="deals_contain">
+                        <div class="jg shad" id="de_al_1">
+                            <!-- <i class="fi fi-sr-plane"></i> -->
+                            <i class="fi fi-ss-plane gi"></i>
+                            <div class="desc">
+                                Islands
+                            </div>
+                            <img src="/images/polynesia.jpg" alt="" class="offer gap">
+                        </div>
+                        <div class="jg shad" id="de_al_2">
+                            <img src="/images/beach.jpg" alt="" class="offer gap">
+
+                            <i class="fi fi-ss-surfing gii yl"></i>
+                            <div class="desc">
+                                Beachs
+                            </div>
+                        </div>
+                        <div class="jg shad" id="de_al_3">
+                            <img src="/images/nature.jpg" alt="" class="offer gap">
+                            <i class="fi fi-sr-mountains gii mo"></i>
+
+                            <div class="desc">
+                                Mountains
+                            </div>
+                        </div>
+                        <div class="jg shad" id="de_al_4">
+                            <img src="/images/palace.jpg" alt="" class="offer gap">
+                            <i class="fi fi-ss-building gii bl"></i>
+                            <div class="desc">
+                                Cities
+                            </div>
+                        </div>
+                        <div class="jg shad" id="de_al_5">
+                            <img src="/images/cruise.jpg" alt="" class="offer gap">
+                            <i class="fi fi-ss-ship-side gi"></i>
+
+                            <div class="desc">
+                                Oceans
+                            </div>
+                        </div>
+                        <div class="jg shad" id="de_al_6">
+                            <img src="/images/nature-3.jpg" alt="" class="offer gap">
+
+                            <i class="fi fi-sr-tree gii gr"></i>
+                            <div class="desc">
+                                Nature
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+            <footer>
+                <div class="footer-tab">
+                    <div class="footer-container-1 flex-container flex-grow
+                            content-center">
+                        <div class="container-1-item-1">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="container-1-item-2">
+
+                            <p><b>Vacation Online</b></p>
+                            <p>267, Benar Road, Jaipur <br> Rajasthan, India - 302013
+
+                            </p>
+                        </div>
+                        <div class="container-1-item-3">
+
+                            <p>Tel- +91 8949655024</p>
+                            <p>Email: info@mysite.com</p>
+                        </div>
+
+
+                    </div>
+                    <div class="footer-container-2 flex-container flex-grow
+                            content-center">
+                        <p class="sdfg">Stay Connected</p>
+                        <ul type="none">
+                            <li class="dfgh"><img src="/images/facebook.png" alt="img">Facebook</li>
+                            <li class="dfgh"><img src="/images/instagram.png" alt="img">Instagram</li>
+                            <li class="dfgh"><img src="/images/youtube.png" alt="img">Youtube</li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-container-3 flex-container flex-grow
+                            content-center">
+                        <p class="ghjk">Or leave Message here</p>
+                        <form action="/action.php" class="form" name="myForm" onsubmit="return validateform()">
+                            <input type="text" placeholder="Full Name" name="enterName">
+                            <script>
+                                function validateform() {
+                                    let val = document.forms["myForm"]["enterName"].value;
+                                    if (val == " ") {
+                                        alert("shii bhar na");
+                                        return false;
+                                    }
+
+                                }
+                            </script>
+
+
+                            <input type="email" placeholder="Email" name="enterEmail">
+                            <br>
+                            <input type="text" placeholder="subject" size="50" name="enterText"><br>
+                            <textarea name="opinion" id="" cols="30" rows="2" placeholder="Your Message..."></textarea>
+
+
+                            <input type="submit" id="btn" value="submit">
+                        </form>
+
+
+
+
+                        <script>
+                            function chnagecolor() {
+                                let btn = document.getElementById('btn');
+                                if (btn.style.backgroundColor != 'transparent') {
+                                    btn.style.backgroundColor = 'transparent';
+                                }
+                            }
+                            let btn = document.getElementById('btn');
+                            btn.addEventListener('mouseout', function revertcolor() {
+                                btn.style.backgroundColor = 'black';
+                            });
+                        </script>
+
+
+                    </div>
+                </div>
+
+
+
+                </div>
+                </div>
+            </footer>
+</body>
+
+</html>

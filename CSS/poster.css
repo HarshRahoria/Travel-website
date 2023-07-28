@@ -1,0 +1,300 @@
+.poster-img {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.poster {
+    width: 100%;
+}
+
+.wewewpe {
+    position: absolute;
+    user-select: none;
+    font-size: 5.6vw;
+    top: 7%;
+    left: 35%;
+    color: white;
+    font-weight: bold;
+}
+
+.fontsize {
+    font-size: 1.2vw;
+    top: 16%;
+}
+
+.booking-list {
+    list-style-type: none;
+    font-size: 15px;
+    top: 27%;
+    display: flex;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+.booking-items {
+    padding: .5vw 2vw;
+    border-radius: 6px;
+    margin-right: 4px;
+    background-color: white;
+    color: rgba(7, 7, 253, 0.8);
+    position: relative;
+    user-select: none;
+}
+
+
+/* .booking-items:hover {
+    background-color: #1a1a48db;
+    color: white;
+} */
+
+.flight-book {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 31px;
+    height: fit-content;
+    margin-top: 2px;
+    left: -24%;
+    background-color: #1a1a48db;
+    border-radius: 8px;
+    display: none;
+}
+
+.input-items {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4px;
+    padding: 10px;
+    color: white;
+}
+
+.item1 {
+    padding: 2px 10px;
+}
+
+.item2 {
+    padding: 10px 10px;
+}
+
+.hotel-book {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 31px;
+    height: fit-content;
+    margin-top: 2px;
+    left: -198%;
+    background-color: #1a1a48db;
+    border-radius: 8px;
+    display: none;
+}
+
+.car-book {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 31px;
+    height: fit-content;
+    margin-top: 2px;
+    left: -305%;
+    background-color: #1a1a48db;
+    border-radius: 8px;
+    display: none;
+}
+
+.cruises-book {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 31px;
+    height: fit-content;
+    margin-top: 2px;
+    left: -374%;
+    background-color: #1a1a48db;
+    border-radius: 8px;
+    display: none;
+}
+
+.package-book {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    top: 31px;
+    height: fit-content;
+    margin-top: 2px;
+    left: -374%;
+    background-color: #1a1a48db;
+    border-radius: 8px;
+    display: none;
+}
+
+
+/* Cards css Deals */
+
+
+/* Main container of cards */
+
+.deals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    /* text-decoration: #000000db; */
+    user-select: none;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.mar {
+    margin-bottom: 5vw;
+}
+
+
+/* image conatiner  */
+
+.deal {
+    position: relative;
+    width: 22vw;
+    height: 14vw;
+    overflow: hidden;
+    margin: 5px;
+    box-shadow: 4px 4px 11.3px 2px #000000db;
+    display: flex;
+    flex-direction: column;
+}
+
+.deal:hover {
+    scale: 1.03;
+}
+
+
+/* images */
+
+.deal_ {
+    position: absolute;
+    width: 100%;
+    height: 14vw;
+    cursor: pointer;
+}
+
+.deal_content {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition-property: all;
+    /* background-color: rgba(79, 84, 231, 0.5); */
+    /* display: none; */
+}
+
+.deal_content:hover {
+    background-color: rgba(79, 84, 231, 0.9);
+    border-radius: 0px;
+    transition-duration: 1s;
+}
+
+.deal_content:hover .rtrt {
+    border-top: 2px solid white;
+    translate: 0px 20%;
+    /* transition-duration: 1.5s; */
+}
+
+.deal_content:hover .tyyt {
+    border-left: 2px solid white;
+    translate: 20% -20%;
+    /* transition-duration: 1.5s; */
+}
+
+.rtrt {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid transparent;
+    translate: -100% 0%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#d_1::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 43%;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: -35px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#d_1:hover::after {
+    content: "Italy";
+    display: contents;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#d_2::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 43%;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: -35px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#d_2:hover::after {
+    content: "New York";
+    display: contents;
+    letter-spacing: 2px;
+    font-family: 'Silkscreen', cursive;
+}
+
+#d_3::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 55%;
+    left: 43%;
+    color: white;
+    font-size: 2vw;
+    letter-spacing: -35px;
+    /* display: none; */
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#d_3:hover::after {
+    content: "Egypt";
+    display: contents;
+    letter-spacing: 2px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.tyyt {
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid transparent;
+    translate: 0% 100%;
+    transition-property: all;
+    transition-duration: 1s;
+}
